@@ -21,7 +21,7 @@ public class SistemaTarefa {
         try(BufferedWriter bw = new BufferedWriter(new FileWriter(ARQUIVO,true))){
             bw.write(tarefas.getTarefa());
             bw.newLine();
-            System.out.println("Usuario cadastrado com sucesso!");
+            System.out.println("Tarefa adicionada com sucesso!");
         }catch (IOException e){
             System.out.println("Erro ao adicionar a tarefa: "+e.getMessage());
         }
